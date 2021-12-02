@@ -55,3 +55,10 @@ namespace Example
             }
             return true;
         }
+
+        public void Test(bool value){
+            var unused = value;
+            return;
+        }
+    }
+}
