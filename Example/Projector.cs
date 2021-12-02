@@ -30,7 +30,7 @@ namespace Example
                 if(yPos < zPos) {
                     return true;
                 }
-                //Add comment
+                //Add comment small extension
             }
             return true;
         }
