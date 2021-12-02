@@ -42,14 +42,13 @@ namespace Example
                 if(xPos > yPos) {
                     return true;
                 }
-                if(yPos > zPos) {
-                    return false;
-                }
                 if(xPos > zPos) {
                     return false;
                 }
                 if(yPos < zPos) {
                     return true;
+                } else {
+                    return false;
                 }
                 //Add comment small extension
             }
