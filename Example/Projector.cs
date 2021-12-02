@@ -31,7 +31,7 @@ namespace Example
                 if(yPos < zPos) {
                     return true;
                 }
-                //Add comment small extension
+                //Add comment small extension, and another one
             }
             foreach (var value in projection.Values)
             {
