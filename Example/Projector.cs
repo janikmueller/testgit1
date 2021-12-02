@@ -8,7 +8,7 @@ namespace Example
     {
         public bool IsValid { get; private set; }
  
-        public bool TryAddProjection(ISimpleProjection projection)
+        public bool TryAddProjection(ISimpleProjection projection, ISimpleProjection projection2)
         {
             if (projection == null) { throw new ArgumentNullException(nameof(projection)); }
             if (!IsValid) { return false; }
