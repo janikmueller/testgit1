@@ -33,7 +33,9 @@ namespace Example
                 }
                 //Add comment small extension
             }
-            
+            return true;
+
+            var backup = unused;
             foreach (var value in projection.Values)
             {
                 var xPos = value.xPos;
