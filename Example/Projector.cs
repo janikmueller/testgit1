@@ -18,6 +18,7 @@ namespace Example
                 var xPos = value.xPos;
                 var yPos = value.yPos;
                 var zPos = value.zPos;
+                var unused = value;
                 if(xPos > yPos) {
                     return true;
                 }
