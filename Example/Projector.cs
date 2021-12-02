@@ -42,9 +42,6 @@ namespace Example
                 if(xPos > yPos) {
                     return true;
                 }
-                if(xPos > zPos) {
-                    return false;
-                }
                 if(yPos < zPos) {
                     return true;
                 } else {
