@@ -8,7 +8,7 @@ namespace Example
     {
         public bool IsValid { get; private set; }
  
-        public bool try_add_projection(ISimpleProjection projection, ISimpleProjection projection2)
+        public bool TryAddProjection(ISimpleProjection projection)
         {
             if (projection == null) { throw new ArgumentNullException(nameof(projection)); }
             if (!IsValid) { return false; }
@@ -18,30 +18,6 @@ namespace Example
                 var xPos = value.xPos;
                 var yPos = value.yPos;
                 var zPos = value.zPos;
-                var unused = value;
-                if(xPos > yPos) {
-                    return true;
-                }
-                if(yPos > zPos) {
-                    return false;
-                }
-                if(xPos > zPos) {
-                    return false;
-                }
-                if(yPos < zPos) {
-                    return true;
-                }
-                //Add comment small extension
-            }
-            return true;
-
-            var backup = unused;
-            foreach (var value in projection.Values)
-            {
-                var xPos = value.xPos;
-                var yPos = value.yPos;
-                var zPos = value.zPos;
-                var unused = value;
                 if(xPos > yPos) {
                     return true;
                 }
